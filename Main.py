@@ -10,9 +10,12 @@ import threading
 import Simple_Audio
 # import Scene
 import Engine
+from pathlib import Path
+from pathlib import PurePath
+from os import fspath
 # from os import system
 # Redirect to another file.
-
+current_directory = Path.cwd()
 # Variable that handles killing the audio thread.
 KILL_AUDIO_THREAD = False
 
@@ -59,6 +62,24 @@ def test():
     KILL_AUDIO_THREAD = True
 
 
+def reconstruct_file_path(pure_path_file):
+    """
+    Convert a PurePath object into a valid string
+    that can be read by playsound.
+    """
+
+    # path_list = pure_path_file.parts
+    # string = fspath(pure_path_file)
+
+    # for i in range(0, len(path_list)):
+    #     #string = string.join((path_list[i]))
+    #     print(str(path_list[i]))
+    #     string += path_list[i]
+
+    # print(string)
+    return fspath(pure_path_file)
+
+
 def start_engine():
     game = Engine.Engine()
     game.start_game()
@@ -70,7 +91,15 @@ def main():
     """
     # print("Starting the program...")
     # print("Creating Audio thread...")
-    file_path = "./audio/07 Access.ogg"
+    audio_directory = Path.cwd() / "audio"
+    audio_directory = PurePath(audio_directory)
+    file_path = audio_directory / "07 Access.ogg"
+
+    # Now convert to file:
+    file_path = reconstruct_file_path(file_path)
+    # print(file_path)
+    # file_path = "./audio/07 Access.ogg"
+    
     audio_t = threading.Thread(target=audio_thread, args=[file_path])
     # print("Creating Input thread...")
     input_t = threading.Thread(target=start_engine)

@@ -11,12 +11,14 @@ from os import path
 from sys import exit
 from textwrap import dedent
 from textwrap import fill
+from pathlib import Path
 from time import sleep
 import xmltodict
 
 # Handles the time to display each line.
 line_pause_length = 4.25
 prompt_character = "> "
+text_path = Path.cwd()
 # line_pause_length = 0
 
 
@@ -174,76 +176,87 @@ class BaseScene(object):
 
 class PyschRoomScene(BaseScene):
     def __init__(self):
-        file_name = "./text/Psychologist_Room.xml"
+        # file_name = "./text/Psychologist_Room.xml"
+        file_name = text_path / "text" / "Psychologist_Room.xml"
         super(PyschRoomScene, self).__init__(file_name)
         self.is_base_scene = False
 
 
 class ApartmentRoomScene(BaseScene):
     def __init__(self):
-        file_name = "./text/Apartment.xml"
+        # file_name = "./text/Apartment.xml"
+        file_name = text_path / "text" / "Apartment.xml"
         super(ApartmentRoomScene, self).__init__(file_name)
         self.is_base_scene = False
 
 
 class SaveRoomScene(BaseScene):
     def __init__(self):
-        file_name = "./text/Save_Point.xml"
+        # file_name = "./text/Save_Point.xml"
+        file_name = text_path / "text" / "Save_Point.xml"
         super(SaveRoomScene, self).__init__(file_name)
         self.is_base_scene = False
 
 
 class HospitalRoomScene(BaseScene):
     def __init__(self):
-        file_name = "./text/Xenon_Hospital_Room.xml"
+        # file_name = "./text/Xenon_Hospital_Room.xml"
+        file_name = text_path / "text" / "Xenon_Hospital_Room.xml"
         super(HospitalRoomScene, self).__init__(file_name)
         self.is_base_scene = False
 
 
 class LeftCorridorScene(BaseScene):
     def __init__(self):
-        file_name = "./text/Xenon_Left_Corridor.xml"
+        # file_name = "./text/Xenon_Left_Corridor.xml"
+        file_name = text_path / "text" / "Xenon_Left_Corridor.xml"
         super(LeftCorridorScene, self).__init__(file_name)
         self.is_base_scene = False
 
 
 class RightCorridorScene(BaseScene):
     def __init__(self):
-        file_name = "./text/Xenon_Right_Corridor.xml"
+        # file_name = "./text/Xenon_Right_Corridor.xml"
+        file_name = text_path / "text" / "Xenon_Right_Corridor.xml"
         super(RightCorridorScene, self).__init__(file_name)
         self.is_base_scene = False
 
 
 class ObservatoryRoomScene(BaseScene):
     def __init__(self):
-        file_name = "./text/Xenon_Observatory_Room.xml"
+        # file_name = "./text/Xenon_Observatory_Room.xml"
+        file_name = text_path / "text" / "Xenon_Observatory_Room.xml"
         super(ObservatoryRoomScene, self).__init__(file_name)
         self.is_base_scene = False
 
 
 class CryrogenicRoomScene(BaseScene):
     def __init__(self):
-        file_name = "./text/Xenon_Cryogenic_Room.xml"
+        # file_name = "./text/Xenon_Cryogenic_Room.xml"
+        file_name = text_path / "text" / "Xenon_Cryogenic_Room.xml"
         super(CryrogenicRoomScene, self).__init__(file_name)
         self.is_base_scene = False
 
 
 class OpeningRoomScene(BaseScene):
     def __init__(self):
-        file_name = "./text/Opening.xml"
+        # file_name = "./text/Opening.xml"
+        file_name = text_path / "text" / "Opening.xml"
         super(OpeningRoomScene, self).__init__(file_name)
         self.is_base_scene = False
 
 
 class EndRoomScene(BaseScene):
     def __init__(self):
-        file_name = "./text/End.xml"
+        # file_name = "./text/End.xml"
+        file_name = text_path / "text" / "End.xml"
         super(EndRoomScene, self).__init__(file_name)
         self.is_base_scene = False
 
 
 class MainMenuScene(BaseScene):
     def __init__(self):
-        file_name = "./text/Main_Menu.xml"
+        # file_name = "./text/Main_Menu.xml"
+        file_name = text_path / "text" / "Main_Menu.xml"
         super(MainMenuScene, self).__init__(file_name)
         self.is_base_scene = False
