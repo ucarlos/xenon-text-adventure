@@ -17,6 +17,7 @@ from os import fspath
 # Redirect to another file.
 current_directory = Path.cwd()
 # Variable that handles killing the audio thread.
+
 KILL_AUDIO_THREAD = False
 
 
