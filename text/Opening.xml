@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<room>
+  <scene-list>
+    <initial type="conversation">
+      <actors>
+	<is-empty>true</is-empty>
+      </actors>
+      <opening>
+	For the last few weeks, I've had the same dream over and over.
+	I find myself asleep not in my normal room, but in some hospital room. Or rather, something like a hospital room.
+	The first thing I notice is a 90s era computer on the left of the bed, complete with a CRT monitor, floppy disk drive and key switch on the keyboard.
+	The room feels quite professional, as there's a collection of books, most of which are not in any language I can recognize.
+	I do notice that there's a poster of what appears to be a human, limbs and all. But all of this clashes with the sleek, steel walls that make up the room.
+	It has this sort of spaceship like feel, almost as if I'm in some sort of Science fiction movie.
+	Still, when try to investigate outside of the room, I begin to feel this pain in my body that quickly gets worse and worse.	
+      </opening>
+      
+      <dialog>
+	If I try to go through the room, I suddenly wake up, back in my regular room.
+      </dialog>
+      <next-scene>end</next-scene>
+      <next-room>psychologist</next-room>
+    </initial>
+    <end type="action">
+      <opening>
+	You should not be able to access this scene. Why? Because there is no more
+	scenes in this room. None. You should fix your shit, because this room doesn't
+	lead anywhere. 
+      </opening>
+      <option-list>
+	<option1>
+	  <name>I'll fix it, I promise.</name>
+	  <type>quit</type>
+	  <selection>
+	    Good. May we never meet again.
+	  </selection>
+	</option1>
+      </option-list>
+    </end>
+  </scene-list>
+</room>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<room>
+  <scene-list>
+    <initial type="action">
+      <opening>
+As I walk back home, I remember that I need to buy groceries for the week.
+After making sure to buy various meats and vegetables, I return to my apartment and whip up some Chicken Fajitas, enough for me and Megumi, should she decide to visit.
+It's been almost a week since she's been here. I guess her job is keeping her busy.
+In any case, I should think about what I should do right now.
+      </opening>
+      <option-list>
+	<option1>
+	  <name>Make Dinner</name>
+	  <type>text</type>	  
+	  <selection>
+	    I have enough Fajitas for the next couple of days for Megumi and I.
+	  </selection>
+	</option1>
+	<option2>
+	  <name>Call Megumi</name>
+	  <type>text</type>	  
+	  <selection>
+	    Megumui gets off from work around Midnight. I don't think she'll appreciate a call from me right now.
+	  </selection>
+	</option2>
+	<option3>
+	  <name>Go to bed</name>
+	  <type>room-change</type>
+	  <selection>
+	    Alright, I'll do that after finishing my classwork. After spending an hour or so on homework, I decide to take one of the pills Ruyoko gave me and head off to bed.
+	  </selection>
+	  <next-scene>scene1</next-scene>
+	  <next-room>xenon-hospital</next-room>
+	</option3>
+	<option4>
+	  <name>Leave my apartment</name>
+	  <type>text</type>
+	<selection>
+	  Why would I leave my apartment? I already bought groceries, and I don't need to go to class tomorrow. Come on now.
+	</selection>
+	</option4>
+      </option-list>
+    </initial>
+    <scene1>
+    </scene1>
+  </scene-list>
+</room>

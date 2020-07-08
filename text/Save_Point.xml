@@ -1,0 +1,39 @@
+<!--
+The save point handles the interlude parts of the game, where the 
+user is prompted to save their progress. At the moment, I don't
+intend to implement it into the game, but this room should serve as a
+good place to stop the game.
+!-->
+<room>
+  <scene-list>
+
+    <initial type="action">
+      <song></song>
+      <opening>
+	In the actual game, this would open up a prompt to save your progress.
+	However, in this case, it serves as a good way to end the game.
+      </opening>
+
+      <option-list>
+	<option1>
+	  <name>End the game</name>
+	  <type>quit</type>
+	  <selection>
+	    Sorry. I'll finish the game later when I have free time.
+	  </selection>
+	</option1>
+	<option2>
+	  <name>Don't end the game</name>
+	  <type>quit</type>
+	  <selection>
+	    Nope, Too bad. I'm ending it now.
+	  </selection>
+	</option2>
+      </option-list>
+    </initial>
+    <save-point1>
+    </save-point1>
+    <save-point2>
+    </save-point2>
+  </scene-list>
+</room>
