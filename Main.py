@@ -6,79 +6,60 @@
 # that handle audio and playback.
 # -----------------------------------------------------------------------------
 import threading
-# import Audio
-import Simple_Audio
-# import Scene
+# import Simple_Audio
 import Engine
+
 from pathlib import Path
 from pathlib import PurePath
 from os import fspath
-# from os import system
-# Redirect to another file.
-current_directory = Path.cwd()
+
 # Variable that handles killing the audio thread.
 
-KILL_AUDIO_THREAD = False
+# KILL_AUDIO_THREAD = False
 
 
-def audio_thread(file_path):
-    """
-    Play an audio file located in file_path repeatedly until the
-    KILL_AUDIO_THREAD is toggled on.
-    """
+# def audio_thread(file_path):
+#     """
+#     Play an audio file located in file_path repeatedly until the
+#     KILL_AUDIO_THREAD is toggled on.
+#     """
 
-    # Create a file that audio will write to.
+#     # Create a file that audio will write to.
 
-    # print("This thread handles the audio portion of the program.")
-    # audio_file = "./audio/06 Access.m4a"
+#     # print("This thread handles the audio portion of the program.")
+#     # audio_file = "./audio/06 Access.m4a"
 
-    while not KILL_AUDIO_THREAD:
-        song = Simple_Audio.play_song(file_path)
-        del song
-
-
-def test_input_thread():
-    print("This thread handles the input portion of the program.")
-    print("For example, please type something. (Quit by writing 'quit')")
-
-    user_input = input()
-    user_input.lower()
-    while user_input != 'quit':
-        print(f"You wrote {user_input}")
-        user_input = input()
-        user_input.lower()
-
-    if user_input == "quit":
-        global KILL_AUDIO_THREAD
-        KILL_AUDIO_THREAD = True
+#     while not KILL_AUDIO_THREAD:
+#         # song = Simple_Audio.play_song(file_path)
+#         play_song(file_path, "mp3")
+#         # del song
+        
 
 
-def test():
-    # Create a Pysch Room Scene:
-    # temp = Scene.ApartmentRoomScene()
-    temp = Engine.Scene.CryrogenicRoomScene()
-    temp.enter_scene()
+# def test_input_thread():
+#     print("This thread handles the input portion of the program.")
+#     print("For example, please type something. (Quit by writing 'quit')")
 
-    global KILL_AUDIO_THREAD
-    KILL_AUDIO_THREAD = True
+#     user_input = input()
+#     user_input.lower()
+#     while user_input != 'quit':
+#         print(f"You wrote {user_input}")
+#         user_input = input()
+#         user_input.lower()
+
+#     if user_input == "quit":
+#         global KILL_AUDIO_THREAD
+#         KILL_AUDIO_THREAD = True
 
 
-def reconstruct_file_path(pure_path_file):
-    """
-    Convert a PurePath object into a valid string
-    that can be read by playsound.
-    """
+# def test():
+#     # Create a Pysch Room Scene:
+#     # temp = Scene.ApartmentRoomScene()
+#     temp = Engine.Scene.CryrogenicRoomScene()
+#     temp.enter_scene()
 
-    # path_list = pure_path_file.parts
-    # string = fspath(pure_path_file)
-
-    # for i in range(0, len(path_list)):
-    #     #string = string.join((path_list[i]))
-    #     print(str(path_list[i]))
-    #     string += path_list[i]
-
-    # print(string)
-    return fspath(pure_path_file)
+#     global KILL_AUDIO_THREAD
+#     KILL_AUDIO_THREAD = True
 
 
 def start_engine():
@@ -92,24 +73,24 @@ def main():
     """
     # print("Starting the program...")
     # print("Creating Audio thread...")
-    audio_directory = Path.cwd() / "audio"
-    audio_directory = PurePath(audio_directory)
-    file_path = audio_directory / "07 Access.ogg"
+    # audio_directory = Path.cwd() / "audio"
+    # audio_directory = PurePath(audio_directory)
+    # file_path = audio_directory / "07 Access.mp3"
 
     # Now convert to file:
-    file_path = reconstruct_file_path(file_path)
+    # file_path = reconstruct_file_path(file_path)
     # print(file_path)
     # file_path = "./audio/07 Access.ogg"
-    
-    audio_t = threading.Thread(target=audio_thread, args=[file_path])
+    # audio_t = threading.Thread(target=audio_thread, args=[file_path])
     # print("Creating Input thread...")
-    input_t = threading.Thread(target=start_engine)
+    # input_t = threading.Thread(target=start_engine)
 
     # print("Executing Audio thread...")
-    audio_t.start()
+    # audio_t.start()
 
     # print("Executing Input thread...")
-    input_t.start()
+    # input_t.start()
+    start_engine()
 
 
 # Execute the program:

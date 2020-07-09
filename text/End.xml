@@ -2,5 +2,8 @@
 <!-- This room marks the end of the game.!-->
 <room>
   <scene-list>
+    <initial>
+      <audio>nil</audio>
+    </initial>
   </scene-list>
 </room>

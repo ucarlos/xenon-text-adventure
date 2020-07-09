@@ -1,6 +1,7 @@
 <room>
   <scene-list>
     <initial type="menu">
+      <audio>nil</audio>
       <opening>
 	--------------------------------------------------------------------------------
 	--------------------------------------------------------------------------------
@@ -15,7 +16,6 @@
 --------------------------------------------------------------------------------
 		Version 0.1
 	  An awful adaption of Xenon ~Mugen no Shitai~.
-	  Created by Ulysses
 --------------------------------------------------------------------------------
       </opening>
       <option-list>
@@ -23,7 +23,7 @@
 	  <name>Start Game</name>
 	  <type>room-change</type>
 	  <selection>
-	    Sit back and relax as you go through this awful game.
+	    Sit back and relax.
 	  </selection>
 	  <next-scene>end</next-scene>
 	  <next-room>intro</next-room>
@@ -32,7 +32,7 @@
 	  <name>Exit Game</name>
 	  <type>quit</type>
 	  <selection>
-	    Some other time, huh?
+	    Maybe another time?
 	  </selection>
 	</option2>
       </option-list>

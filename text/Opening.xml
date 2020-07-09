@@ -2,6 +2,7 @@
 <room>
   <scene-list>
     <initial type="conversation">
+      <audio>access</audio>
       <actors>
 	<is-empty>true</is-empty>
       </actors>
@@ -18,10 +19,11 @@
       <dialog>
 	If I try to go through the room, I suddenly wake up, back in my regular room.
       </dialog>
-      <next-scene>end</next-scene>
+      <next-scene>error</next-scene>
       <next-room>psychologist</next-room>
     </initial>
-    <end type="action">
+    
+    <error type="action">
       <opening>
 	You should not be able to access this scene. Why? Because there is no more
 	scenes in this room. None. You should fix your shit, because this room doesn't
@@ -36,6 +38,7 @@
 	  </selection>
 	</option1>
       </option-list>
-    </end>
+    </error>
+    
   </scene-list>
 </room>

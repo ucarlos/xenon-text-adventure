@@ -5,13 +5,12 @@
 <room max_scenes="2">
   <scene-list>
     <initial type="conversation">
+      <audio>access</audio>      
       <!-- Determines if any characters other than mc are in the scene!-->
       <actors>
 	<is-empty>false</is-empty>
 	<ryouko></ryouko>
       </actors>
-      <!-- Song played for the scene!-->
-      <song></song>
       <opening>
 	I brought up the idea of dreams to my neighbor, Ryouko a couple of days ago.
 	I've always known Ryouko to be a Professor of Psychology at my university, and we've had some pleasant conversations about Psychology in the past.
@@ -72,7 +71,11 @@
       <next-room>apartment</next-room>
 </initial>
 <scene1>
+  <audio>access</audio>
+  <opening>
+  </opening>
 </scene1>
+
 </scene-list>
 
 </room>

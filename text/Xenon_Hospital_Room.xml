@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <room>
   <scene-list>
+    <initial type="conversation">
+      <audio>dream</audio>
+    </initial>
   </scene-list>
 </room>

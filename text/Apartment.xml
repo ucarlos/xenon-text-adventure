@@ -2,6 +2,7 @@
 <room>
   <scene-list>
     <initial type="action">
+      <audio>apartment</audio>
       <opening>
 As I walk back home, I remember that I need to buy groceries for the week.
 After making sure to buy various meats and vegetables, I return to my apartment and whip up some Chicken Fajitas, enough for me and Megumi, should she decide to visit.

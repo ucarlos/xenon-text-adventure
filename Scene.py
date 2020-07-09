@@ -62,7 +62,7 @@ class BaseScene(object):
         end = str(chr(ord('a') + options))
 
         return ("a" <= string and string < end)
-
+    
     def get_user_input(self, options_list):
         """
         Prints the available options and allows the user to choose.
@@ -88,6 +88,27 @@ class BaseScene(object):
         result = as_list[(ord(user_input) - ord('a'))]
         return result
 
+    def get_scene_from_flag(self):
+        """
+        Return the scene using the key stored in self.scene_flag.
+        """
+        return self.scene_list[self.scene_flag]
+
+    def get_audio_key_from_flag(self):
+        """
+        Retrieve the key stored in the audio tag from the current scene
+        using the scene flag.
+        """
+        current_scene = self.get_scene_from_flag()
+
+        return current_scene["audio"]
+
+    def get_audio_key_from_scene_name(self, scene_name):
+        """
+        Retrieve the key stored in the audio tag from a specified scene.
+        """
+        return scene_name["audio"]
+
     def enter_scene(self):
         if self.is_base_scene:
             print("ERROR: You have tried to enter a scene that is defined"
@@ -96,7 +117,9 @@ class BaseScene(object):
             exit(1)
 
         # Make a difference between (scene) and (scene with options)
-        self.current_room_scene = self.scene_list[self.scene_flag]
+        # self.current_room_scene = self.scene_list[self.scene_flag]
+        self.current_room_scene = self.get_scene_from_flag()
+
         # Get the type of scene:
         self.current_room_scene_type = self.current_room_scene["@type"]
 
@@ -119,7 +142,7 @@ class BaseScene(object):
 
             if actor_check["is-empty"] == 'false':
                 # Print Ryouko:
-                with open("./ascii/pychologist_bw.txt", "r") as fstream:
+                with open("./ascii/ryouko.txt", "r") as fstream:
                     print(fstream.read())
 
             self.print_dialog(self.current_room_scene["opening"],
@@ -163,15 +186,17 @@ class BaseScene(object):
                 self.scene_flag = option["next-scene"]
                 return option["next-room"]
             elif option["type"] == "scene-change":
-                # Set the flag to the scene-change and then call enter_scene
-                # again.
+                # Set the flag to the scene-change and then return the same
+                # room again.
                 self.print_dialog(option["selection"], line_pause_length)
                 # self.scene_flag = key
                 self.scene_flag = self.current_room_scene["next-scene"]
-                self.enter_scene()
+                # self.enter_scene()
+                return option["next-room"]
             elif option["type"] == "quit":
+                # Make sure to kill the audio thread, and return the end room.
                 self.print_dialog(option["selection"], line_pause_length)
-                exit(1)
+                return "end"
 
 
 class PyschRoomScene(BaseScene):
