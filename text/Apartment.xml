@@ -28,7 +28,7 @@ In any case, I should think about what I should do right now.
 	  <name>Go to bed</name>
 	  <type>room-change</type>
 	  <selection>
-	    Alright, I'll do that after finishing my classwork. After spending an hour or so on homework, I decide to take one of the pills Ruyoko gave me and head off to bed.
+	    Alright, I'll do that after finishing my classwork.
 	  </selection>
 	  <next-scene>scene1</next-scene>
 	  <next-room>xenon-hospital</next-room>
@@ -42,7 +42,9 @@ In any case, I should think about what I should do right now.
 	</option4>
       </option-list>
     </initial>
+    
     <scene1>
+      
     </scene1>
   </scene-list>
 </room>

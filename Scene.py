@@ -16,10 +16,30 @@ from time import sleep
 import xmltodict
 
 # Handles the time to display each line.
-line_pause_length = 4.25
+# line_pause_length = 4.25
 prompt_character = "> "
 text_path = Path.cwd()
-# line_pause_length = 0
+line_pause_length = 0
+
+# Print out characters
+
+
+def print_character(char_name):
+    # lowercase the name just in case:
+    char_name = char_name.lower()
+
+    ascii_path = Path.cwd() / "ascii"
+    char_portaits = {"ryouko": (ascii_path / "ryouko.txt"),
+                     "ranfa": (ascii_path / "ranfa.txt"),
+                     "megumi": (ascii_path / "megumi.txt")}
+
+    if not (char_name in char_portaits):
+        print(f"There's no character with the name {char_name}. Fix that.")
+    else:
+        file_path = char_portaits[char_name]
+
+        with open(file_path, "r") as fstream:
+            print(fstream.read())
 
 
 class BaseScene(object):
@@ -141,9 +161,8 @@ class BaseScene(object):
             actor_check = self.current_room_scene["actors"]
 
             if actor_check["is-empty"] == 'false':
-                # Print Ryouko:
-                with open("./ascii/ryouko.txt", "r") as fstream:
-                    print(fstream.read())
+                
+
 
             self.print_dialog(self.current_room_scene["opening"],
                               line_pause_length)

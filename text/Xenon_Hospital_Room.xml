@@ -1,8 +1,142 @@
 <?xml version="1.0" encoding="utf-8"?>
 <room>
   <scene-list>
+    <!-- ##################################################!-->
+    <!-- Day 1 Scenes                                      !-->
+    <!-- ##################################################!-->
+    
     <initial type="conversation">
       <audio>dream</audio>
+      <actors>
+	<is-empty>true</is-empty>
+      </actors>
+      <opening>
+	After spending an hour or so on homework, I decide to take one of the pills Ruyoko gave me and head off to bed.
+	
+	I wake up to the familiar scene that I've experienced for the last two weeks.
+	A Hospital room, both futuristic and retro. I'm in the same hospital bed that I always wake up.
+	The same chocolate bed sheets and the same silky green pillowcase.
+	The floor and the walls are as sleek as ever, bring up memories of the inside of a spaceship.
+	The 90s era computer is still there, and I decide to boot the bad boy up.
+	Sounds of a hard-disk moving fill the room, and the CRT monitor displays the all-too familiar IBM logo.
+	After waiting for a bit, the phrase "UNIX" appears, alongside the current date and the login prompt.
+	I notice the date. "Saturday, September 19, 1992." Almost fifth-teen years ago.
+	I look around the bookshelf and see again the 90s era magazines and newspapers.
+	There's also a shelf dedicated to something advanced, but it's written in a language I've never seen before.
+	Now that you think about, almost everything else in this room is written in that language.
+	The only thing that's in English is the computer and a couple of magazines. Pretty strange.
+
+	I look for the all familiar windows that I talked about with Professor Ryouko, and see one at the far right of the room.
+	The blinds are shut and after opening I see what appears to be my reflection.... and something dark.
+	In fact, it's almost pitch dark, save a few bright... stars?
+
+	
+      </opening>
+      <dialog>
+	I look again to verify what I saw, and see again the bright stars that dot the landscape.
+      </dialog>
+      <next-scene>scene1</next-scene>
+      <next-room>xenon-hospital</next-room>
     </initial>
+    <scene1 type="action">
+      <audio>realize</audio>
+      <opening>
+	[John]: "I'm in space. God, why didn't I search this room earlier?"
+	[John]: "There has to be some form of artificial gravity which allows me to walk normally here."
+	(I peer again at the landscape and notice the reddish tint of the star.)
+	(This obviously isn't our sun, since our sun is bright orange, and I don't notice any planets orbiting the star.)
+	(In fact, I believe this ship is the only thing orbiting it.)
+	(How far away is this place from Earth or our Solar System?)
+	(In any case, I should try to examine my surroundings again.)	
+      </opening>
+
+      <option-list>
+	<option1>
+	  <name>Examine PC</name>
+	  <type>text</type>
+	  <selection>
+	    [John]: "Yeah, let's see what we can find out of this machine."
+	    The login prompt is the same as it was a couple of minutes ago.
+	    It also displays the date, which is Saturday, September 19, 1992.
+	    For whatever reason, the username is automatically set to the  user 'ranfa',
+	    but since I don't know the password, I can't get in.
+	    I can try to make a new account, but there's not much of a point.
+	    (I decide to step away from the PC.)
+	  </selection>
+	</option1>
+	<option2>
+	  <name>Look out the window again</name>
+	  <type>text</type>
+	  <selection>
+	    I look out the window again and see a part of the spaceship and the red star that it orbits.
+	    I believe this type of star is called a "Red Dwarf".
+	    They're fairly common in space, but they don't make good candidates for life to survive.
+	    I think it was something involving radiation or something?
+	  </selection>
+	</option2>
+	<option3>
+	  <name>Leave the room</name>
+	  <type>room-change</type>
+	  <selection>
+	    I look at the futuristic door that bars me from the rest of the spaceship.
+	    In my previous dreams, every time I tried to exit the room, I would start to feel pain across my body that would wake me up.
+	    That's the reason why Professor Ryouko give me these pills, but I still feel hesitant to even get close to the damn thing.
+	    After thinking about it for a couple of minutes, I decide to exit the room.
+	    I slowly make my way to the door, bracing myself for the pain that follows.
+	    But the pain never arrives, in fact, I don't feel a thing.
+	    [John]: "It has to be the painkillers that Ryouko gave me."
+	    There's no doorknob, but the doors opens from the right, leaving me open to explore.
+	    I decide to leave this room.
+	  </selection>	    
+	  <next-scene>scene2</next-scene>
+	  <next-room>xenon-leftcorridor</next-room>
+	</option3>
+      </option-list>
+    </scene1>
+    
+    <day1-last type="action">
+      <audio>dream</audio>
+      <opening>I return back to the hospital room.</opening>
+      <option-list>
+	<option1>
+	  <name>Leave the hospital room.</name>
+	  <type>room-change</type>
+	  <selection>
+	    Yeah, there was no point coming back to this room.
+	  </selection>
+	  <next-scene>day1-last</next-scene>
+	  <next-room>xenon-leftcorridor</next-room>
+	</option1>
+
+	<option2>
+	  <name>Examine the PC</name>
+	  <type>text</type>
+	  <selection>
+	    There's not much I can do with this PC. I know that it tries to login using the user 'ranfa', but I don't know the password. Who the hell is Ranfa?
+	  </selection>
+	</option2>
+
+	<option3>
+	  <name>Look outside the window</name>
+	  <type>text</type>
+	  <selection>
+	    I can't believe that I'm on some starship orbiting some star somewhere in the galaxy. That's so surreal.
+	  </selection>
+	</option3>
+      </option-list>
+    </day1-last>
+    
+    <!-- ##################################################!-->
+    <!-- Day 2 Scenes                                      !-->
+    <!-- ##################################################!-->
+    
+    <day2-initial>
+      <audio>dream</audio>
+      <opening>
+	I awake once more in the hospital room onboard the spaceship Xenon.
+      </opening>
+    </day2-initial>
+    <day1>
+    </day1>
   </scene-list>
 </room>

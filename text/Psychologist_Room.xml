@@ -9,7 +9,7 @@
       <!-- Determines if any characters other than mc are in the scene!-->
       <actors>
 	<is-empty>false</is-empty>
-	<ryouko></ryouko>
+	<name>ryouko</name>
       </actors>
       <opening>
 	I brought up the idea of dreams to my neighbor, Ryouko a couple of days ago.
@@ -17,53 +17,53 @@
 	After finishing my Differential Equations course, I decided to stop by her office and ask her about it.
       </opening>
       <dialog>  
-	[Ryouko] : "Hey, [John]!"
-	[John] : "It's been a while, Professor Ryouko. How are things?"
-	[Ryouko] : "Everything's going well. I just finished grading all of these papers."
-	[Ryouko] : "This crop of students aren't quite as well as the last time I taught Intro to Psychology, and it shows in their papers." 
-	[Ryouko] : "Most of them are C quality work, but there's some promising students in this bunch."
-	[Ryouko] : "But enough about that. What can I do for you?"
-	[John] : "I've got this weird question about dreams.
-	[John] : "I know that you often talk about the history of Psychology."
-	[John] : "We've discussed about both Sigmund Freud and Carl Yung's opinions on dreams and the human subconscious."
-	[Ryouko] : "Yes. According to Freud, he believed that dreams represented a disguised form of fulfillment in a person's life.
-	[Ryouko] : "These dreams can range from relatively Innocent behavior to behavior that would be considered illegal in our society."
-	[Ryouko] : "However, these dreams may be what the person subconsciously wants but cannot obtain."
-	[Ryouko] : "But I take that our conversation won't be about this?"
+	[Ryouko]: "Hey, John!"
+	[John]: "It's been a while, Professor Ryouko. How are things?"
+	[Ryouko]: "Everything's going well. I just finished grading all of these papers."
+	[Ryouko]: "This crop of students aren't quite as well as the last time I taught Intro to Psychology, and it shows in their papers." 
+	[Ryouko]: "Most of them are C quality work, but there's some promising students in this bunch."
+	[Ryouko]: "But enough about that. What can I do for you?"
+	[John]: "I've got this weird question about dreams.
+	[John]: "I know that you often talk about the history of Psychology."
+	[John]: "We've discussed about both Sigmund Freud and Carl Yung's opinions on dreams and the human subconscious."
+	[Ryouko]: "Yes. According to Freud, he believed that dreams represented a disguised form of fulfillment in a person's life.
+	[Ryouko]: "These dreams can range from relatively Innocent behavior to behavior that would be considered illegal in our society."
+	[Ryouko]: "However, these dreams may be what the person subconsciously wants but cannot obtain."
+	[Ryouko]: "But I take that our conversation won't be about this?"
 	(I nod.)
-	[Ryouko] : "Is this going to take a long time to explain?"
-	[John] : "It won't."
-	[John] : "I've been having this dream where I've been teleported to this futuristic place."
-	[John] : "Yet I feel like it's not. It's like a mixture of some futuristic room and 90s era technology."
-	[John] : "And when I try to leave the room, I start to feel this pain that wakes me up from the dream."
-	[John] : "Yet, I feel fine afterwards.
-	[Ryouko] : "Hold on, I might have something that could help you with that."
+	[Ryouko]: "Is this going to take a long time to explain?"
+	[John]: "It won't."
+	[John]: "I've been having this dream where I've been teleported to this futuristic place."
+	[John]: "Yet I feel like it's not. It's like a mixture of some futuristic room and 90s era technology."
+	[John]: "And when I try to leave the room, I start to feel this pain that wakes me up from the dream."
+	[John]: "Yet, I feel fine afterwards.
+	[Ryouko]: "Hold on, I might have something that could help you with that."
 	(Ryouko opens her desk drawers and begins to search for something.)
 	(After a while, she finds something and hands it over to me.)
-	[Ryouko] : "This could help with the pain that you experience in this dream."
-	[John] : "What is this?"
-	[Ryouko] : "It's a bottle of Codaprin, a type of painkiller. It's a little bit stronger than ibuprofen, but it shouldn't cause any problems for you."
-	[John] : "Well, thanks."
+	[Ryouko]: "This could help with the pain that you experience in this dream."
+	[John]: "What is this?"
+	[Ryouko]: "It's a bottle of Codaprin, a type of painkiller. It's a little bit stronger than ibuprofen, but it shouldn't cause any problems for you."
+	[John]: "Well, thanks."
 	(Ryouko pauses for a moment and then begins to speak.)
-	[Ryouko] : "So John, Tell me more about this place."
-	[John] : "Well, It kinda looks like any ordinary hospital room, but with sleek steel walls."
-	[John] : "There's also this retro and futuristic feel to this room too. I've noticed both these advanced indescribable tools that linger in the room."
-	[John] : "But it also has those 90s era computers, you know, the ones with floppy disks and those small monitors."
-	[John] : "I've also noticed that there's some magazines from that era. I think I saw a BYTE magazine or two.
-	[John] : "It's almost as if its owner has some nostalgia for that time period."
-	[Ryouko] : "Does this room have any windows or any small openings that you can peer out of?"
-	[John] : "I think it does, but I've yet to look outside of them. My main focus was to simply get out the room."
-	[Ryouko] : "And you've had this dream for how long?"
-	[John] : "Almost two weeks."
-	[Ryouko] : "Having the same dream or a variation of the same reason is nothing unique."
-	[Ryouko] : "People suffering from mental trauma often talk about experiencing the same sort of events in their dreams."
-	[Ryouko] : "For example, people suffering from PTSD often subconciously recreate the event.
-	[Ryouko] : "Although, there's always some variation to the dream that they experience."
-	[Ryouko] : "Since you've been having this dream for almost two weeks, You should try to explore more of the place."
-	[Ryouko] : "This is of course, If you're telling the truth and not just trying to come up with some interesting story."
-	[John] : "I wouldn't lie about something like this."
-	[Ryouko] : "Well, try to look around for what I talked about. Maybe you'll be able to find something new. Make sure to take one of those painkillers I gave you, otherwise you won't be able to continue through."
-	[John] : "I will. I'll see you later Ryouko."
+	[Ryouko]: "So John, Tell me more about this place."
+	[John]: "Well, It kinda looks like any ordinary hospital room, but with sleek steel walls."
+	[John]: "There's also this retro and futuristic feel to this room too. I've noticed both these advanced indescribable tools that linger in the room."
+	[John]: "But it also has those 90s era computers, you know, the ones with floppy disks and those small monitors."
+	[John]: "I've also noticed that there's some magazines from that era. I think I saw a BYTE magazine or two.
+	[John]: "It's almost as if its owner has some nostalgia for that time period."
+	[Ryouko]: "Does this room have any windows or any small openings that you can peer out of?"
+	[John]: "I think it does, but I've yet to look outside of them. My main focus was to simply get out the room."
+	[Ryouko]: "And you've had this dream for how long?"
+	[John]: "Almost two weeks."
+	[Ryouko]: "Having the same dream or a variation of the same reason is nothing unique."
+	[Ryouko]: "People suffering from mental trauma often talk about experiencing the same sort of events in their dreams."
+	[Ryouko]: "For example, people suffering from PTSD often subconciously recreate the event.
+	[Ryouko]: "Although, there's always some variation to the dream that they experience."
+	[Ryouko]: "Since you've been having this dream for almost two weeks, You should try to explore more of the place."
+	[Ryouko]: "This is of course, If you're telling the truth and not just trying to come up with some interesting story."
+	[John]: "I wouldn't lie about something like this."
+	[Ryouko]: "Well, try to look around for what I talked about. Maybe you'll be able to find something new. Make sure to take one of those painkillers I gave you, otherwise you won't be able to continue through."
+	[John]: "I will. I'll see you later Ryouko."
       </dialog>
       <!-- Set the next scene and move to the next room. !-->
       <next-scene>scene1</next-scene>

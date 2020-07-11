@@ -106,24 +106,23 @@ class Engine(object):
             next_room_audio_key = next_room.get_audio_key_from_flag()
 
             # Change the song depending on the scene.
-            if current_room_audio_key != next_room_audio_key:
-                # Unfortunately wait for the song to finish.
-                # self.audio_file_should_loop = False
-                # self.play_audio_from_scene(next_room_audio_key)
-                if len(self.process_list) != 0:
-                    self.process_list[0].terminate()
+            # if current_room_audio_key != next_room_audio_key:
+            #     # Unfortunately wait for the song to finish.
+            #     # self.audio_file_should_loop = False
+            #     # self.play_audio_from_scene(next_room_audio_key)
+            #     if len(self.process_list) != 0:
+            #         self.process_list[0].terminate()
                 
-                if next_room_audio_key == "nil" or next_room_audio_key == "":
-                    pass
-                else:
-                    audio_path = self.audio_list[next_room_audio_key]
-                    audio_process = multiprocessing.Process(target=play_audio_from_scene,
-                                                            args=(next_room_audio_key,
-                                                                  audio_path)
-                                                            )
-                    audio_process.start()
-                    self.process_list.append(audio_process)
-                    
+            #     if next_room_audio_key == "nil" or next_room_audio_key == "":
+            #         pass
+            #     else:
+            #         audio_path = self.audio_list[next_room_audio_key]
+            #         audio_process = multiprocessing.Process(target=play_audio_from_scene,
+            #                                                 args=(next_room_audio_key,
+            #                                                       audio_path)
+            #                                                 )
+            #         audio_process.start()
+            #         self.process_list.append(audio_process)               
             # Now set the current room:
             current_room = next_room
             current_room_audio_key = next_room_audio_key

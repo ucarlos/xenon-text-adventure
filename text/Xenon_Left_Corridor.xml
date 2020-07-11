@@ -1,5 +1,66 @@
 <?xml version="1.0" encoding="utf-8"?>
 <room>
   <scene-list>
+    <initial type="action">
+      <audio>dream</audio>
+      <opening>
+	In front of me, I see a sleek, white corridor.
+	Doors to various rooms litter the corridor and there seems to be something like a vending machine to the top right of me. I would buy something if I had any money...
+	A large potted plant lays in the corner; its withered leaves are evident of a neglectful owner.
+	I don't see anyone around, but judging from the condition of the corridor, it looks like people live there.
+	I mean, there was the human-like poster in the hospital room.
+	In any case, I should look around.
+      </opening>
+
+      <option-list>
+	<option1>
+	  <name>Head back to the hospital room</name>
+	  <type>room-change</type>
+	  <selection>
+	    Head Back? Well, okay then. I doubt that I'll find anything new there, but just to be sure...
+	  </selection>
+	  <next-scene>initial</next-scene>
+	  <next-room>xenon-hospital</next-room>
+	</option1>
+	<option2>
+	  <name>Head to the door on the left</name>
+	  <type>text</type>
+	  <selection>
+	    I first examine the door before attempting to open it.
+	    There's a keypad to the left the door, but I don't know its combination.
+	    I try to head into the door on the left by standing in front of it, but the door's window pane flashes dark red and then a beeping sound begins to play. It doesn't seem as if I can enter this room.
+	  </selection>
+	</option2>
+
+	<option3>
+	  <name>Head to the door on the right</name>
+	  <type>text</type>
+	  <selection>
+	    The keypad to the right of the door seems to suggest that I can't open this door through normal means. When I stand in front of the door, a red color covers the door's window pane. A beeping sound begins to play. I don't think I can open this room, at least not yet.
+	  </selection>
+	</option3>
+
+	<option4>
+	  <name>Buy something from the vending machine</name>
+	  <type>scene-change</type>
+	  <selection>
+	    I don't have any money to put in the.... Wait, there doesn't seem to be any place to put money on this machine.
+	    Can't I just press any of the selection?
+	    Oh shit... I don't need any money!
+	    I decide to press a couple of random buttons, and several items pop out at the bottom, such as some drink in some bizarre bottle.
+	    I quickly take a sip of the drink, and to my surprise, it tastes a bit like Dr. Pepper. How weird. After filling my pockets, I decide to go back.
+	  </selection>
+	  <next-scene>day1-ranfa</next-scene>
+	  <next-room>xenon-leftcorridor</next-room>
+	</option4>
+      </option-list>
+    </initial>
+    
+    <day1-ranfa type="converation">
+      <audio>dream</audio>
+      <actors>
+	<is-empty></is-empty>
+      </actors>
+    </day1-ranfa>
   </scene-list>
 </room>
