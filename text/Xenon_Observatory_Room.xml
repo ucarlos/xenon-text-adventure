@@ -1,5 +1,48 @@
 <?xml version="1.0" encoding="utf-8"?>
 <room>
   <scene-list>
+    
+    <initial type="action">
+      <audio>dream</audio>
+      <opening>
+	I scan the room first before heading in. Ranfa doesn't seem to be in this room, and on future inspection, this is almost identical to the hospital room.
+	There's another 90s era computer, but I notice a telescope in the middle of the room.
+	Didn't Ranfa say that there was an observatory room on this ship?
+	I guess she was trying to make some sort of joke or something.	
+      </opening>
+      
+      <option-list>
+	<option1>
+	  <name>Head back to the corridor.</name>
+	  <type>room-change</type>
+	  <selection>
+	    Go back to the corridor? Alright then.
+	  </selection>
+	  <next-scene>initial</next-scene>
+	  <next-room>xenon-rightcorridor</next-room>
+	</option1>
+
+	<option2>
+	  <name>Inspect the room</name>
+	  <type>text</type>
+	  <selection>
+	    I inspect the room for anything interesting.
+	    I wouldn't call this a hospital room since they're only one bed instead of the multiple beds in the other hospital room.
+	    There's also this curtain to the left. Let's open it.
+	    As I try to open the curtain, a wave starts to appear on the curtain. Almost as if there's a hologram of a curtain instead.
+	    I also can't really move past it either. I try with all my might, but It doesn't budge. Damn.	 
+	  </selection>
+	</option2>
+
+	<option3>
+	  <name>Take a quick nap on the spare bed</name>
+	  <type>text</type>
+	  <selection>
+	    This bed looks pretty comfortable, but I don't really feel tired right now.
+	  </selection>
+	</option3>
+      </option-list>
+    </initial>
+    
   </scene-list>
 </room>

@@ -1,5 +1,99 @@
 <?xml version="1.0" encoding="utf-8"?>
 <room>
   <scene-list>
+    <initial type="action">
+      <audio>dream</audio>      
+      <opening>
+	As I walk through the right corridor, I quickly notice that it's an almost mirror image of the left corridor, save a non-neglected potted plant and a vending machine. I also notice a room at the end of the corridor. I know that Ranfa walked through here, yet I have no idea what room she went into. I should explore this place.
+      </opening>
+      <option-list>
+	<option1>
+	  <name>Return to the left corridor</name>
+	  <type>room-change</type>
+	  <selection>
+	    It wouldn't hurt searching in the left-corridor again. Off we go then.
+	  </selection>
+	  <next-scene>day1-end</next-scene>
+	  <next-room>xenon-leftcorridor</next-room>
+	</option1>
+
+	<option2>
+	  <name>Head through the left room</name>
+	  <type>room-change</type>
+	  <selection>
+	    There doesn't seem to be any keypad for this room. Let's head inside.
+	  </selection>
+	  <next-scene>day1-end</next-scene>
+	  <next-room>xenon-observatory</next-room>
+	</option2>
+
+	<option3>
+	  <name>Head through the right door</name>
+	  <type>text</type>
+	  <selection>
+	    Dammit, this room's locked. There's no keypad on this door, but there's a card reader instead. I obviously don't have the card for this room, so I can't get it.
+	  </selection>
+	</option3>
+
+	<option4>
+	  <name>Head through the room at the end of the corridor</name>
+	  <type>room-change</type>
+	  <selection>
+	    Alright, let's head through this door.
+	  </selection>
+	  <next-scene>day1-end</next-scene>
+	  <next-room>xenon-cryogenic</next-room>
+	</option4>
+      </option-list>
+    </initial>
+
+    <day1-end type="action">
+      <audio>dream</audio>
+      <opening>
+	I'm back in the right-most portion of the corridor.
+      </opening>
+
+      <option-list>
+	<option1>
+	  <name>Return to the left corridor</name>
+	  <type>room-change</type>
+	  <selection>
+	    It wouldn't hurt searching in the left-corridor again. Off we go then.
+	  </selection>
+	  <next-scene>day1-end</next-scene>
+	  <next-room>xenon-leftcorridor</next-room>
+	</option1>
+	
+	<option2>
+	  <name>Head through the left room</name>
+	  <type>room-change</type>
+	  <selection>
+	    Let's head through this door.
+	  </selection>
+	  <next-scene>day1-end</next-scene>
+	  <next-room>xenon-observatory</next-room>
+	</option2>
+	
+	<option3>
+	  <name>Head through the right door</name>
+	  <type>text</type>
+	  <selection>
+	    The door's locked by a card reader. I need the appropriate card to get inside.
+	  </selection>
+	</option3>
+
+	<option4>
+	  <name>Head through the room at the end of the corridor</name>
+	  <type>room-change</type>
+	  <selection>
+	    Alright, let's head through this door.
+	  </selection>
+	  <next-scene>day1-end</next-scene>
+	  <next-room>xenon-cryogenic</next-room>
+	</option4>
+      </option-list>
+    </day1-end>
+
+    
   </scene-list>
 </room>

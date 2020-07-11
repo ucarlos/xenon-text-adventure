@@ -1,7 +1,82 @@
 <?xml version="1.0" encoding="utf-8"?>
 <room>
   <scene-list>
-    <initial>
+    <initial type="conversation">
+      <audio>nil</audio>      
+      <actors>
+	<is-empty>true</is-empty>
+      </actors>
+
+      <opening>
+As soon as I enter the room, I quickly notice how different it is from the rest of the rooms that I've visited. The dark-tint of the room contrasts with the light white of the corridor, and the three pods in from of me are labeled with a specific number. Suddenly, I notice a soft beeping sound from behind the middle coffin, and I look at the blank computer terminal at the back, waiting for any user input.
+      </opening>
+      <dialog>
+	Suddenly, I hear something moving. I turn around and see Ranfa's familiar face.
+      </dialog>
+      <next-scene>day1-ranfa</next-scene>
+      <next-room>xenon-cryogenic</next-room>
     </initial>
+
+    <day1-ranfa type="conversation">
+      <audio>encoder</audio>
+      <actors>
+	<is-empty>false</is-empty>
+	<name>ranfa</name>
+      </actors>
+      <opening>
+	[John]: "Ranfa? Where the hell have you been?"
+	Instead of answering my question, She puts her index finger to her mouth and points in the direction of the computer terminal.
+	I look at the screen once again and see that the screen saver is just starting up.
+	Then, a message pops up on the terminal. It reads:
+	P.P.E
+	Psychic Program Encoder
+	PSY Encoder operating...
+	[John]: "What the hell is a Psychic Program Encoder?"
+	[Ranfa]: "It's a invention that allows people to traverse through the void that binds."
+	[John]: "The void that binds? What the hell do you mean?"
+	(Just as Ranfa opens her mouth to speak, a piercing warning sound goes off in the room. The middle capsule flashes white for several seconds, and then opens completely. A red-haired woman lies dormant inside of the capsule, surrounded by various machines and sensors of unknown origin. These sensors cover her nude body, and a black visor covers her eyes.
+      </opening>
+      <dialog>
+	[John]: "...What the hell?"
+	[John]: "Ranfa, why the hell is there someone in this capsule? Do you know this person?"
+	[Ranfa]: "You don't know?"
+	[John]: "Of course I don't!"
+	(In a soft quiet voice, I hear Ranfa mutter something.)
+	[Ranfa]: "Falneria...."
+	(Is this person's name Falneria? It has to be.)
+	(I look back at the capsule and quickly notice something.)
+	(The girl starts to squirm in the capsule, as if she's in some nightmare.)
+	(The tossing and turning becomes more and more frantic, and some of the sensors come off from her body.)
+	(With a quick jolt, she sits up and takes off her visor.)
+	(I open my mouth.)
+	[John]: "Hey! Is your name Falneria?"
+	(Ranfa looks at me with a look of disapproval, but then the girl responds.)
+	[???]: "Ranfa, how did he get here?"
+	(I look at Ranfa.)
+	[Ranfa]: "He can traverse through the void that binds."
+	(The void that binds?)
+	[Falneria]: "Is he a freecaster?"
+	[Ranfa]: "I do not know."
+	(Falneria looks at me.)
+	[Falneria]: "You! From what planet do you come from?"
+	[John]: "Earth. I come from Earth."
+	[John]: "It orbits the sun... I mean the star Sol."
+	[John]: "Do you know how far this place is from my solar system?"
+	(Falneria pauses for a moment before speaking)
+	[Falneria]: "I do not know of where this... Sol is located.
+	I also have not heard of a planet called Earth.
+	In fact, judging by your appearance, I was going to ask if you were from Aeora."
+	[John]: "I've never heard of an planet named Aeora."
+	But as Falneria begins to speak, I feel a sharp pain at my side and it quickly spreads to the rest of my body.
+	Ranfa immediately notices and tries to hold up my body, but it's no use.
+	I fall down to the ground, unable to move without feeling tremendous pain.
+	The pain subsides and then I awake on the floor, in a room I recognize as my own.
+      </dialog>
+      <next-scene>end</next-scene>
+      <next-room>save-point</next-room>
+    </day1-ranfa>
+    
+    <end type="conversation">
+    </end>
   </scene-list>
 </room>

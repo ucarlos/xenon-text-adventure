@@ -55,13 +55,13 @@
 	    I quickly take a sip of the drink, and to my surprise, it tastes a bit like Dr. Pepper. How weird.
 	    After filling my pockets, I decide to go back.
 	  </selection>
-	  <next-scene>day_one_ranfa</next-scene>
+	  <next-scene>day-one-ranfa</next-scene>
 	  <next-room>xenon-leftcorridor</next-room>
 	</option4>
       </option-list>
     </initial>
     
-    <day_one_ranfa type="conversation">
+    <day-one-ranfa type="conversation">
       <audio>dream</audio>
       <actors>
 	<is-empty>false</is-empty>
@@ -139,7 +139,7 @@
       
       <next-scene>day-one-end</next-scene>
       <next-room>xenon-rightcorridor</next-room>
-    </day_one_ranfa>
+    </day-one-ranfa>
     
     <day-one-end type="action">
       <audio></audio>

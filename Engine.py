@@ -78,7 +78,8 @@ class Engine(object):
                   "7th": audio_dir / "11 7th.mp3",
                   "fact": audio_dir / "15 Fact.mp3",
                   "past": audio_dir / "16 Past.mp3",
-                  "apartment": audio_dir / "apartment.mp3"
+                  "apartment": audio_dir / "apartment.mp3",
+                  "nil": "nil"
                   }
     # Handles the audio thread.
     process_list = []

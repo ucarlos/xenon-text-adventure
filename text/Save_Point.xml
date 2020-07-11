@@ -8,7 +8,7 @@ good place to stop the game.
   <scene-list>
 
     <initial type="action">
-      <song></song>
+      <audio>nil</audio>
       <opening>
 	In the actual game, this would open up a prompt to save your progress.
 	However, in this case, it serves as a good way to end the game.

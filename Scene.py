@@ -19,7 +19,7 @@ import xmltodict
 # line_pause_length = 4.25
 prompt_character = "> "
 text_path = Path.cwd()
-line_pause_length = 1
+line_pause_length = 0
 
 # Print out characters
 
@@ -198,19 +198,19 @@ class BaseScene(object):
                 key = self.get_user_input(self.current_room_scene["option-list"])
                 option = self.current_room_scene["option-list"][key]
 
-            if option["type"] == "room-change":
+            if (option["type"] == "room-change" or option["type"] == "scene-change"):
                 self.print_dialog(option["selection"], line_pause_length)
                 # return option["next-scene-name"]
                 self.scene_flag = option["next-scene"]
                 return option["next-room"]
-            elif option["type"] == "scene-change":
-                # Set the flag to the scene-change and then return the same
-                # room again.
-                self.print_dialog(option["selection"], line_pause_length)
-                # self.scene_flag = key
-                self.scene_flag = self.current_room_scene["next-scene"]
-                # self.enter_scene()
-                return option["next-room"]
+            # elif option["type"] == "scene-change":
+            #     # Set the flag to the scene-change and then return the same
+            #     # room again.
+            #     self.print_dialog(option["selection"], line_pause_length)
+            #     # self.scene_flag = key
+            #     self.scene_flag = option["next-scene"]
+            #     # self.enter_scene()
+            #     return option["next-room"]
             elif option["type"] == "quit":
                 # Make sure to kill the audio thread, and return the end room.
                 self.print_dialog(option["selection"], line_pause_length)
