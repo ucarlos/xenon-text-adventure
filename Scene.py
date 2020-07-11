@@ -19,7 +19,7 @@ import xmltodict
 # line_pause_length = 4.25
 prompt_character = "> "
 text_path = Path.cwd()
-line_pause_length = 0
+line_pause_length = 1
 
 # Print out characters
 
@@ -161,8 +161,7 @@ class BaseScene(object):
             actor_check = self.current_room_scene["actors"]
 
             if actor_check["is-empty"] == 'false':
-                
-
+                print_character(actor_check["name"])
 
             self.print_dialog(self.current_room_scene["opening"],
                               line_pause_length)

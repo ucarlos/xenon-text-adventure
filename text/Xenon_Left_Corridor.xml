@@ -28,7 +28,8 @@
 	  <selection>
 	    I first examine the door before attempting to open it.
 	    There's a keypad to the left the door, but I don't know its combination.
-	    I try to head into the door on the left by standing in front of it, but the door's window pane flashes dark red and then a beeping sound begins to play. It doesn't seem as if I can enter this room.
+	    I try to head into the door on the left by standing in front of it, but the door's window pane flashes dark red and then a beeping sound begins to play.
+	    It doesn't seem as if I can enter this room.
 	  </selection>
 	</option2>
 
@@ -36,7 +37,10 @@
 	  <name>Head to the door on the right</name>
 	  <type>text</type>
 	  <selection>
-	    The keypad to the right of the door seems to suggest that I can't open this door through normal means. When I stand in front of the door, a red color covers the door's window pane. A beeping sound begins to play. I don't think I can open this room, at least not yet.
+	    The keypad to the right of the door seems to suggest that I can't open this door through normal means.
+	    When I stand in front of the door, a red color covers the door's window pane.
+	    A beeping sound begins to play.
+	    I don't think I can open this room, at least not yet.
 	  </selection>
 	</option3>
 
@@ -48,19 +52,145 @@
 	    Can't I just press any of the selection?
 	    Oh shit... I don't need any money!
 	    I decide to press a couple of random buttons, and several items pop out at the bottom, such as some drink in some bizarre bottle.
-	    I quickly take a sip of the drink, and to my surprise, it tastes a bit like Dr. Pepper. How weird. After filling my pockets, I decide to go back.
+	    I quickly take a sip of the drink, and to my surprise, it tastes a bit like Dr. Pepper. How weird.
+	    After filling my pockets, I decide to go back.
 	  </selection>
-	  <next-scene>day1-ranfa</next-scene>
+	  <next-scene>day_one_ranfa</next-scene>
 	  <next-room>xenon-leftcorridor</next-room>
 	</option4>
       </option-list>
     </initial>
     
-    <day1-ranfa type="converation">
+    <day_one_ranfa type="conversation">
       <audio>dream</audio>
       <actors>
-	<is-empty></is-empty>
+	<is-empty>false</is-empty>
+	<name>ranfa</name>
       </actors>
-    </day1-ranfa>
+      <opening>
+	As I return to the corridor, I notice the sound of footsteps, and then the door to the left room slides open. In front of me... a woman with green hair.
+	Wait, green hair? I take another glance at her. Green fluffy hair, golden eyes, large bows to the side, and a rather revealing outfit.
+	After some awkward moments, she opens her mouth to speak.
+	Some bizarre language comes out of her mouth, and after realizing that I can't understand a word she says, she opens her mouth again. I immediately recognize it as English, although with an bizarre accent.
+      </opening>
+      <dialog>
+[???]:  "Who are you?"
+[John]: "My name is John."
+[???]: "Where did you come from?"
+[John]: "I came from that hospital room in the back."
+[???]: "..."
+[???]: "I'm not fond of jokes. Where did you come from?"
+[John]: "I'm from Earth. I don't know what this place is, I don't know where this place is, and I have no idea idea who you are. I thought this station was abandoned and so I decided to look around."
+[???]: "Earth?"
+[John]: "Yes, it's a planet."
+[???]: "..."
+[???]: "How were you able to get out of the hospital room?"
+[John]: "I don't know."
+[???]: "..."
+[John]: "Now it's your turn. Who are you?"
+[???]: "???"
+[John]: "I said, who are you?"
+[???]: "My name is Ranfa."
+[John]: "Ranfa."
+[Ranfa]: "Yes, Ranfa. Is there a problem?"
+[John]: "Well, I've never heard of anyone named Ranfa."
+[Ranfa]: "..."
+[John]: "Can I ask you a question?"
+[Ranfa]: "Go ahead."
+[John]: "Any reason why you're wearing that?"
+[Ranfa]: "Wearing what?"
+[John]: "That outfit of yours."
+[Ranfa]: "I normally wear this. Is there something wrong with that?"
+[John]: "Err...No, not at all."
+[Ranfa]: "Any other questions?"
+[John]: "What is this place?"
+[Ranfa]: "This is the spaceship Xenon."
+[John]: "How big is this spaceship?"
+[Ranfa]: "The vessel is quite spacious. Its exact dimensions are classified."
+[John]: "Whose spaceship is this?"
+[Ranfa]: "It belongs to Bianca, the captain."
+[John]: "Where is this Bianca?"
+[Ranfa]: "That information is also classified."
+[John]: "Is she close by at least?"
+[Ranfa]: "...Perhaps."
+[John]: "Where is this spaceship located?"
+[Ranfa]: "This spaceship is currently in orbit of the star Roldan.
+[John]: "Roldan?"
+[Ranfa]: "Yes, Roldan. It's a rather diminutive red dwarf star, hostile to almost all form of life."
+[John]: ("I have never heard of a star called Roldan. But it's fairly obvious that I'm quite far away from the Solar System.)
+[John]: ("Also, why is she being so specific?")
+[John]: (I clear my throat.)
+[John]: "What is the spaceship Xenon doing on Roldan.?"
+[Ranfa]: "Captain Bianca is the only one that can answer that."
+[John]: "Can you show me the rest of this ship? I would like to know how this place looks like."
+[Ranfa]: "I'm afraid that most of the doors in this spaceship are locked to me. The only doors open are the observatory room and the hanger."
+[John]: "Why are you telling me this?"
+[Ranfa]: "..."
+[John]: "Wait, so you don't consider me a threat? Is that why you're telling me?"
+[Ranfa]: "You have no weapons, and I can easily dispatch you should you try something."
+[John]: ("She brandishes a pistol.")
+[John]: "Well, may I look around in those rooms?"
+[Ranfa]: "..."
+[Ranfa]: "You can browse both rooms, but should you try anything, I and the Automatic Defense system will destroy you."
+[John]: "Harsh words from a girl dressed like a stripper."
+[Ranfa]: "..."
+(Ranfa walks off, leaving me to explore.)
+      </dialog>
+      
+      <next-scene>day-one-end</next-scene>
+      <next-room>xenon-rightcorridor</next-room>
+    </day_one_ranfa>
+    
+    <day-one-end type="action">
+      <audio></audio>
+      <opening>I'm back in the left corridor.</opening>
+      <option-list>
+	<option1>
+	  <name>Go to the right corridor</name>
+	  <type>room-change</type>
+	  <selection>
+	    Yeah, let's go back.
+	  </selection>
+	  <next-scene>day-one-end</next-scene>
+	  <next-room>xenon-rightcorridor</next-room>
+	</option1>
+	
+	<option2>
+	  <name>Go to the hospital room</name>
+	  <type>room-change</type>
+	  <selection>
+	    Go back to the hospital room?
+	  </selection>
+	  <next-scene>day-one-end</next-scene>
+	  <next-room>xenon-hospital</next-room>
+	</option2>
+
+	<option3>
+	  <name>Use the vending machine</name>
+	  <type>text</type>
+	  <selection>
+	    I don't need anymore soda or junk food right now. Really, I don't.
+	  </selection>
+	</option3>
+
+	<option4>
+	  <name>Go to the door on the left.</name>
+	  <type>text</type>
+	  <selection>
+	    Ranfa came from this room, but I don't have the combination to the keypad. I can't go inside.
+	  </selection>
+	</option4>
+
+	<option5>
+	  <name>Go to the door on the right</name>
+	  <type>text</type>
+	  <selection>
+	    Since I don't know the number combination for the keypad, I can't go inside the room.
+	  </selection>
+	</option5>
+      </option-list>
+    </day-one-end>
+
+    
   </scene-list>
 </room>

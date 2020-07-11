@@ -37,13 +37,6 @@
 	[John]: "Yet I feel like it's not. It's like a mixture of some futuristic room and 90s era technology."
 	[John]: "And when I try to leave the room, I start to feel this pain that wakes me up from the dream."
 	[John]: "Yet, I feel fine afterwards.
-	[Ryouko]: "Hold on, I might have something that could help you with that."
-	(Ryouko opens her desk drawers and begins to search for something.)
-	(After a while, she finds something and hands it over to me.)
-	[Ryouko]: "This could help with the pain that you experience in this dream."
-	[John]: "What is this?"
-	[Ryouko]: "It's a bottle of Codaprin, a type of painkiller. It's a little bit stronger than ibuprofen, but it shouldn't cause any problems for you."
-	[John]: "Well, thanks."
 	(Ryouko pauses for a moment and then begins to speak.)
 	[Ryouko]: "So John, Tell me more about this place."
 	[John]: "Well, It kinda looks like any ordinary hospital room, but with sleek steel walls."
@@ -62,8 +55,18 @@
 	[Ryouko]: "Since you've been having this dream for almost two weeks, You should try to explore more of the place."
 	[Ryouko]: "This is of course, If you're telling the truth and not just trying to come up with some interesting story."
 	[John]: "I wouldn't lie about something like this."
-	[Ryouko]: "Well, try to look around for what I talked about. Maybe you'll be able to find something new. Make sure to take one of those painkillers I gave you, otherwise you won't be able to continue through."
-	[John]: "I will. I'll see you later Ryouko."
+	[Ryouko]: "Well, try to look around for what I talked about. Maybe you'll be able to find something new.
+	[Ryouko]: "Also, you should try taking this with you."
+	(Ryouko opens her desk drawers and begins to search for something.)
+	(After a while, she finds something and hands it over to me.)
+	[Ryouko]: "This could help with the pain that you experience in this dream."
+	[John]: "What is this?"
+	[Ryouko]: "It's a bottle of Codaprin, a type of painkiller. It's a little bit strong, but it shouldn't cause any problems for you."
+	[John]: "Painkillers? How would these help me?"
+	[Ryouko]: "It's entirely possible that any physiological changes that you experience may alter your dream state. Since you've told me about the pain you feel when leaving the room, You should try taking painkillers to see if they can help you explore your dream."
+	[John]: "I'll try taking some tonight. If they work, I'll come back tomorrow and tell you about it."
+	[Ryouko]: "I'll hold you to that, John."
+	And with that, I bid farwell to Ryouko and leave her office.
       </dialog>
       <!-- Set the next scene and move to the next room. !-->
       <next-scene>scene1</next-scene>
